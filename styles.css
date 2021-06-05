@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#flash {
+    background-color: white;
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    filter: blur(30px);
+
+    position: absolute;
+    right: 0;
+    animation: float infinite 3s normal linear;
+}
+
+@keyframes float {
+    0% {
+        filter: opacity(0) blur(30px)
+    }
+    1%{
+        filter: opacity(1) blur(30px)
+    }
+    80% {
+        transform: translateY(50vh)
+    }
+    81% {
+        filter: opacity(0) blur(30px)
+    }
+    100% {
+        filter: opacity(0) blur(30px)
+    }
+}
