@@ -24,18 +24,18 @@ body {
 
 @keyframes float {
     0% {
-        filter: opacity(0) blur(30px)
+        filter: opacity(0) blur(10px)
     }
     1%{
-        filter: opacity(1) blur(30px)
+        filter: opacity(1) blur(10px)
     }
     80% {
         transform: translateY(50vh)
     }
     81% {
-        filter: opacity(0) blur(30px)
+        filter: opacity(0) blur(10px)
     }
     100% {
-        filter: opacity(0) blur(30px)
+        filter: opacity(0) blur(10px)
     }
 }
